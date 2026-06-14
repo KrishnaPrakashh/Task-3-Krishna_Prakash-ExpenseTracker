@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Test API</title>
+</head>
+<body>
+
+    <button onclick="addTransaction()">Add Transaction</button>
+
+    <script>
+        async function addTransaction() {
+            const response = await fetch("/api/transactions", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify({
+                    title: "Salary",
+                    amount: 25000,
+                    type: "Income",
+                    category: "Job",
+                    transaction_date: "2026-06-14"
+                })
+            });
+
+            const data = await response.json();
+            console.log(data);
+            alert("Transaction Added");
+        }
+    </script>
+
+</body>
+</html>
