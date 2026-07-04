@@ -7,6 +7,9 @@ Personal Expense Tracker is a full-stack web application that helps users manage
 This project demonstrates database integration and CRUD operations using Node.js, Express.js, SQLite, and Bootstrap.
 
 ---
+## Live Demo
+
+https://task-3-krishna-prakash-expensetracker-1.onrender.com/
 
 ## Features
 
